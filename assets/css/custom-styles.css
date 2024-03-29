@@ -1,0 +1,340 @@
+html {
+    scroll-behavior: smooth;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+body {
+    margin: 0px;
+    /* background-color: #0e0e0e; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Shrikhand", serif;
+}
+
+p,
+a,
+li {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* .row {
+    margin: 0px;
+} */
+
+header,
+.woocommerce-shop header,
+.single-product header,
+.woocommerce-cart header,
+.woocommerce-checkout header {
+    width: 100%;
+    height: 150px;
+    background-color: #F4AE0B;
+    display: flex;
+    align-items: center;
+    /* z-index: 9999;
+    transition: all .25s linear; */
+}
+
+/* .woocommerce-account header img {
+    background-color: brown;
+
+} */
+
+.single-product header,
+.woocommerce-cart header,
+.woocommerce-checkout header {
+    /* background-color: rgba(248, 248, 248, 1); */
+    width: auto;
+    background-color: #F4AE0B;
+    margin-top: 0px;
+}
+
+header div,
+.woocommerce-shop header div,
+.single-product header div,
+.woocommerce-cart header div,
+.woocommerce-checkout header div {
+    width: auto;
+    height: 95%;
+    flex-grow: 1;
+}
+
+
+header div img,
+.woocommerce-shop header div img,
+.single-product header div img,
+.woocommerce-cart header div img,
+.woocommerce-checkout header div img,
+.woocommerce-account header div img {
+    width: auto;
+    height: 100%;
+}
+
+
+header .menu,
+.woocommerce-shop header .menu,
+.single-product header .menu {
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header .menu li,
+.woocommerce-shop header .menu li,
+.single-product header .menu li {
+    padding: 0px 10px;
+}
+
+header .menu li a,
+.woocommerce-shop header .menu li a,
+.single-product header .menu li a {
+    color: black;
+}
+
+.single-product header .menu li a,
+.woocommerce-cart header .menu li a,
+.woocommerce-checkout header .menu li a {
+    color: #0e0e0e;
+}
+
+.scrolledHeader,
+.woocommerce-shop .scrolledHeader,
+.single-product .scrolledHeader,
+.woocommerce-cart .scrolledHeader {
+    height: 75px;
+    background-color: #f8f8f8;
+}
+
+.scrolledHeader .menu li a,
+.woocommerce-shop .scrolledHeader .menu li a,
+.single-product .scrolledHeader .menu li a {
+    color: #0e0e0e;
+}
+
+/** Masthead (home) **/
+.masthead {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.masthead div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+}
+
+.masthead h1 {
+    font-size: 4.5em;
+    color: #f8f8f8;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, .7);
+}
+
+.masthead h2 {
+    font-size: 4em;
+    color: #f8f8f8;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, .7);
+}
+
+/** Homepage **/
+.home-row-one {
+    padding: 5% 5% 5% 10%;
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 48%, 0% 48%);
+    background-color: #f8f8f8;
+}
+
+.home-row-two {
+    padding: 5% 0% 5% 5%;
+    align-items: center;
+    background-color: #0e0e0e;
+}
+
+.home-row-two div:nth-child(1) {
+    color: #f8f8f8;
+}
+
+.home-row-two div:nth-child(2) img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all .25s linear;
+}
+
+.home-row-two div:nth-child(2) img:hover {
+    filter: grayscale(0%);
+}
+
+.home-row-three {
+    background-color: #f8f8f8;
+    padding: 5%;
+}
+
+.home-row-three div img {
+    max-height: 250px;
+    width: auto;
+}
+
+.post-masthead {
+    width: auto;
+    height: 75vh;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.post-masthead div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.post-masthead div h1 {
+    color: #f8f8f8;
+    font-size: 4em;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.single-post-row-one {
+    padding: 5% 0% 5% 5%;
+    background-color: #f8f8f8;
+}
+
+.top-footer {
+    color: #f8f8f8;
+}
+
+.related-posts img {
+    width: 100%;
+    height: auto;
+}
+
+.first-widget-area,
+.single-product .first-widget-area {
+    text-align: center;
+}
+
+.first-widget-area img,
+.single-product .first-widget-area img {
+    width: 80%;
+    height: auto;
+}
+
+.second-widget-area,
+.third-widget-area {
+    padding-top: 3%;
+}
+
+.second-widget-area h6 {
+    font-size: 26px;
+}
+
+.third-widget-area form lable,
+.third-widget-area .wpforms-field-sublabel,
+.third-widget-area legend,
+.wpforms-field-label {
+    display: none !important;
+}
+
+.third-widget-area input,
+.third-widget-area textarea {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#wpforms-error-noscript {
+    display: none;
+}
+
+.shop-masthead {
+    width: 100%;
+    height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.shop-masthead div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+}
+
+.shop-masthead h1 {
+    font-size: 4.5em;
+    color: #f8f8f8;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, .7);
+}
+
+.shop-body {
+    background-color: #f8f8f8;
+    padding: 5%;
+}
+
+.single-product main {
+    padding: 3% 5% 5% 5%;
+    background-color: #f8f8f8;
+}
+
+.single-product {
+    background-color: #f8f8f8;
+}
+
+.single-product .content-area {
+    width: 75%;
+    float: left;
+}
+
+.single-product #sidebar {
+    width: 25%;
+    float: right;
+    padding: 15% 5% 5% 5%;
+    background-color: #f8f8f8;
+    outline-left: solid 1px #0e0e0e;
+}
+
+.single-product footer {
+    float: left;
+    background-color: #0e0e0e;
+}
+
+.woocommerce-cart {
+    background-color: #f8f8f8;
+}
+
+.general-masthead {
+    padding-top: 25%;
+}
+
+footer,
+.woocommerce-cart footer,
+.woocommerce-checkout footer {
+    background-color: #F4AE0B;
+    margin-bottom: -20px;
+}
+
+.woocommerce-checkout {
+    background-color: #f8f8f8;
+}
