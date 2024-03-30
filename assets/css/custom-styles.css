@@ -1,3 +1,6 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
 html {
     scroll-behavior: smooth;
     margin-top: 0px !important;
@@ -152,6 +155,15 @@ header .menu li a,
 }
 
 /** Homepage **/
+.overlay {
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 100px;
+}
 .home-row-one {
     padding: 5% 5% 5% 10%;
     clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 48%, 0% 48%);
@@ -345,8 +357,8 @@ header .menu li a,
 }
 
 .single-product footer {
-    float: left;
-    background-color: #0e0e0e;
+    /* float: left;
+    background-color: #0e0e0e; */
 }
 
 .woocommerce-cart {
@@ -354,10 +366,24 @@ header .menu li a,
 }
 
 .general-masthead {
-    padding-top: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url('http://oasis.local/wp-content/uploads/2024/03/screenshot.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    display: flex;
+    justify-content: space-around
 }
-
+.general-masthead h1 {
+    font-size: 4.5em;
+    color: #f8f8f8;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, .7);
+    text-align: center;
+}
 footer,
+.woocommerce-single-product footer,
+.woocommerce-shop footer,
 .woocommerce-cart footer,
 .woocommerce-checkout footer {
     background-color: #F4AE0B;

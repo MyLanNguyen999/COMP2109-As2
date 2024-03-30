@@ -17,7 +17,7 @@ get_header();
             <?php echo wp_kses_post(get_field('tab_description')); ?>
         </p>
 
-    <section class="masthead" style="background-image: url('<?php echo wp_kses_post(get_field('image')); ?>')">
+    <section class="masthead" style="background-image: url('<?php echo wp_kses_post(get_field('masthead_image')); ?>')">
       <div>
         <h1><?php echo wp_kses_post(get_field('main_heading')); ?></h1>
         <h2><?php echo wp_kses_post(get_field('sub-heading')); ?></h2>

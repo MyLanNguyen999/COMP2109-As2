@@ -29,15 +29,15 @@ function footer_widgets_init(){
     'before_title'  => '<h4 class="widget-title">',
     'after_title'   => '</h4>',
   ));
-  register_sidebar( array(
-    'name'          => __( 'Footer Widget Area Three', 'footerwidget' ),
-    'id'            => 'footer-widget-area-three',
-    'description'   => __( 'The third footer widget area', 'footerwidget' ),
-    'before_widget' => '<div class="contact-widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h4 class="widget-title">',
-    'after_title'   => '</h4>',
-  ));
+//   register_sidebar( array(
+//     'name'          => __( 'Footer Widget Area Three', 'footerwidget' ),
+//     'id'            => 'footer-widget-area-three',
+//     'description'   => __( 'The third footer widget area', 'footerwidget' ),
+//     'before_widget' => '<div class="contact-widget">',
+//     'after_widget'  => '</div>',
+//     'before_title'  => '<h4 class="widget-title">',
+//     'after_title'   => '</h4>',
+//   ));
 }
 add_action( 'widgets_init', 'footer_widgets_init' );
 //* My custom post type
@@ -162,3 +162,12 @@ add_action( 'wp_enqueue_scripts', 'enqueue_wc_cart_fragments' );
  * do_action( 'woocommerce_after_single_product');
  * do_action( 'woocommerce_after_main_content');
  */
+// * add function to zoom into the gallery of the product photos
+  function web_add_woocommerce_support() {
+    add_theme_support( 'woocommerce');
+  }
+  add_theme_support( 'wc-product-gallery-zoom');
+  add_theme_support( 'wc-product-gallery-lightbox');
+  add_theme_support( 'wc-product-gallery-slider');
+  add_action( 'after_setup_theme', 'web_add_woocommerce_support');
+  ?>
