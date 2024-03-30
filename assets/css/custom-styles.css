@@ -135,7 +135,7 @@ header .menu li a,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(0, 0, 0, .6);
+    /* background-color: rgba(0, 0, 0, .6); */
     text-align: center;
 }
 
@@ -225,6 +225,29 @@ header .menu li a,
     height: auto;
 }
 
+
+.footer-menu-widget {
+    display: flex;
+    justify-content: center
+}
+
+.footer-menu-widget li {
+    /* background-color: #0e0e0e;
+    padding: 5px 15px;
+    border-radius: 10px; */
+    margin: 3px;
+    list-style:none;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+
+}
+.footer-menu-widget .menu li a {
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
 .first-widget-area,
 .single-product .first-widget-area {
     text-align: center;
@@ -235,17 +258,23 @@ header .menu li a,
     width: 80%;
     height: auto;
 }
+.first-widget-area li {
+    list-style: none;
+    text-align: center;
+}
 
 .second-widget-area,
 .third-widget-area {
-    padding-top: 3%;
+    /* padding-top: 3%; */
 }
 
 .second-widget-area h6 {
     font-size: 26px;
 }
-
-.third-widget-area form lable,
+.third-widget-area {
+    background-color: pink;
+}
+/* .third-widget-area form lable,
 .third-widget-area .wpforms-field-sublabel,
 .third-widget-area legend,
 .wpforms-field-label {
@@ -258,7 +287,7 @@ header .menu li a,
     height: auto;
     padding: 5px;
     margin-bottom: 5px;
-}
+} */
 
 #wpforms-error-noscript {
     display: none;

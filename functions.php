@@ -11,7 +11,7 @@ add_action( 'after_setup_theme', 'custom_theme_setup' );
 //* Add Featured image support to our posts (part of assignment one)
 add_theme_support( 'post-thumbnails' );
 
-//* set up our custom footer widgets (part of assignment one)
+//* set up our custom footer widgets 
 function footer_widgets_init(){
   register_sidebar(array(
     'name'          => __( 'Footer Widget Area One', 'footerwidget' ),
@@ -67,7 +67,7 @@ function book_init(){
 add_action('init', 'book_init');
 
 //* now create a shortcode for my custom post-type
-function food_shortcode(){
+function book_shortcode(){
   $query = new WP_Query(array('post_type' => 'book', 'post_per_page' => 8, 'order' => 'asc'));
   while ($query -> have_posts()) : $query-> the_post(); ?>
     <div class="col-sm-12 col-md-6 col-lg-4">
