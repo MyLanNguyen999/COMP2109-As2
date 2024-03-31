@@ -5,25 +5,26 @@
  */
 get_header();
 ?>
-<main>
+
      <div>
         <section class="homepage-tab overlay" style="background-image: url('<?php echo esc_url(wp_kses_post(get_field('tab_image'))); ?>');">
         <h1 class="overlay">
             <?php echo wp_kses_post(get_field('tab_title')); ?>
         </h1> 
-    </div>
+      </div>
+      <main>
     </section>
         <p>
             <?php echo wp_kses_post(get_field('tab_description')); ?>
         </p>
 
-    <section class="masthead" style="background-image: url('<?php echo wp_kses_post(get_field('masthead_image')); ?>')">
+    <!-- <section class="masthead" style="background-image: url('<?php echo wp_kses_post(get_field('masthead_image')); ?>')">
       <div>
         <h1><?php echo wp_kses_post(get_field('main_heading')); ?></h1>
         <h2><?php echo wp_kses_post(get_field('sub-heading')); ?></h2>
       </div>
-    </section>
-    <section class="home-row-one row">
+    </section> -->
+    <!-- <section class="home-row-one row">
       <div class="col-sm-12 col-md-12 col-lg-12">
         <h3><?php echo wp_kses_post(get_field('row_one_title')); ?></h3>
         <p><?php echo wp_kses_post(get_field('row_one_text')); ?></p>
@@ -40,7 +41,7 @@ get_header();
     </section>
     <section class="home-row-three row">
       <?php echo wp_kses_post(get_field('row_three_content')); ?>
-    </section>
+    </section> -->
 </main>
 <?php
 get_footer();
